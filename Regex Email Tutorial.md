@@ -26,27 +26,42 @@ Regex Components include Anchors, Quantifiers, Grouping constructs, character cl
 
 The email Regex includes following Components:
 
-<img src="./images/email-Regex.JPG" alt="alt text" width="500"/>
+ ![Email Regex](/images/email-regex.jpg)
 
 ### Anchors ^ or $
 
 *Preceed the string defining the character pattern
-*For Email RegEx, we have ^ (Circumflex) anchor in the begining and $ at the end. 
+*For Email RegEx, we have ^ (Circumflex) anchor in the begining and $ at the end of email pattern.
 
 ### Grouping Constructs ()
 
-used for complex Regex, where the pattern has to be matched in different sections.
+*Used for complex Regex, where the pattern has to be matched in different sections.
+*A typical valid email pattern is:
+>somename@domain-name
+>Ex. somename@email.com
+
+*To follow the same pattern, the email RegEx has been grouped in 3 constructs:
+
+1. ([a-z0-9_\.-]+)
+2. ([\da-z\.-]+)
+3. ([a-z\.]{2,6})
 
 ### Bracket Expressions []
 
-define range of characters to be matched
+*define range of characters to be matched
+*[a-z0-9_\.-]: accepts characters a-z, numbers 0-9, special characters: "." and "-"
+*[\da-z\.-]: \d - a digit 0-9, characters a-z, special characters: "." and "-"
+*[a-z\.]: characters a-z and special character "."
+*RegEx is case sensitive so email address in format **TOM@somemail.com** is **unacceptable**.
+*Few accepted patterns are:
+    *_abc@email.com
+    *1bc@e1mail.net
+    *abc@email.com
+    *abc@2chan.co.gv
 
 ### Quantifiers {}
 
-define the minimum and maximum number of times the defined pattern can be matched.
-
-
-
+*Define the minimum and maximum number of times the defined pattern can be matched.
 
 
 ### Character Classes
