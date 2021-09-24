@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Matching an email pattern in Regex
 
-Introductory paragraph (replace this with your text)
+The term "Regex" stands for "Regular expressions" which are strings defining a pattern. They are used in different programming languages: JavaScript, PHP, Python, Perl and Java.
+In JavaScript, RegEx are objects which are defined in Literals or Classes.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial would discuss: RegEx for Email.
+
+>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
