@@ -22,17 +22,34 @@ In this tutorial would discuss: RegEx for Email.
 
 ## Regex Components
 
-### Anchors
+Regex Components include Anchors, Quantifiers, Grouping constructs, character classes, character escapes, flags, OR operator. 
 
-### Quantifiers
+The email Regex includes following Components:
 
-### Grouping Constructs
+<img src="./images/email-Regex.JPG" alt="alt text" width="500"/>
 
-### Bracket Expressions
+### Anchors ^ or $
+
+*Preceed the string defining the character pattern
+*For Email RegEx, we have ^ (Circumflex) anchor in the begining and $ at the end. 
+
+### Grouping Constructs ()
+
+used for complex Regex, where the pattern has to be matched in different sections.
+
+### Bracket Expressions []
+
+define range of characters to be matched
+
+### Quantifiers {}
+
+define the minimum and maximum number of times the defined pattern can be matched.
+
+
+
+
 
 ### Character Classes
-
-### The OR Operator
 
 ### Flags
 
