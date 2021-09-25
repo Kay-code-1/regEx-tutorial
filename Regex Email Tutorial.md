@@ -62,9 +62,24 @@ The email Regex includes following Components:
 ### Quantifiers {}
 
 *Define the minimum and maximum number of times the defined pattern can be matched.
-
+*For grouping construct 3, pattern is: ([a-z\.]{2,6}), which means that minimum 2 and maximum 6 characters from a to z can be entered followed by a period "."
+*That mean, for email regex pattern, following formats are accepted: 
+>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    *example@example.com
+    *example@ca.ca
+    *abc@2chan.co.gv
 
 ### Character Classes
+
+*A character class is a special notation that matches any symbol from a certain set.
+*They can be used to match digits(\d), words(\w) or spaces(\s).
+*For email regex, the character class - git can be seen in construct -2:
+> ([\da-z\.-]+)
+*In this class, a single digit from 0-9 can be matched. 
+*Examples:
+    *example@99acres.com
+    *example@w3c.com
+
 
 ### Flags
 
