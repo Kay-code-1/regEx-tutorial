@@ -24,7 +24,7 @@ Regex Components include Anchors, Quantifiers, Grouping constructs, character cl
 
 The email Regex includes following Components:
 
- ![Email Regex](/images/email-regex.jpg)
+ ![Email Regex](/email-regex.jpg)
 
 ### Anchors
 
